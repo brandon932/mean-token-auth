@@ -6,6 +6,7 @@
   <style>body {padding-top: 70px;}</style>
 </head>
 <body>
+<div ng-controller="navbarCtrl">
 
   <!-- Navigation -->
   <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
@@ -22,7 +23,7 @@
         <a ng-if="isAuthenticated()" href="#/home" class="navbar-brand">Home</a>
       </div>
       <!-- Collect the nav links, forms, and other content for toggling -->
-      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <div class="collapse navbar-collapse pull-right" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav">
           <li ng-if="!isAuthenticated()"><a href="#/login">Login</a></li>
           <li ng-if="!isAuthenticated()"><a href="#/signup">Signup</a></li>
@@ -33,6 +34,7 @@
     </div>
     <!-- /.container -->
   </nav>
+</div>
 
   <!-- Page Content -->
   <div class="container">
